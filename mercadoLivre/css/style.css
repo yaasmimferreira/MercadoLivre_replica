@@ -1,0 +1,175 @@
+:root{
+    --cor-principal: #FFF159;
+    --cor-preta: black;
+    --cor-ofertas: #3682fd;
+    --cor-branca: #f1ffff;
+    --cor-valor: #2ca469;
+    --cor-valor-parc: #4db68a;
+    --cor-textos: #383838;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topo{
+    background-color: var(--cor-principal);
+    height: 342px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.topo .cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--cor-preta);
+}
+
+.topo .cabecalho .pesquisa{
+    width: 400px;
+    display: flex;
+}
+
+.topo .cabecalho .pesquisa input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px 0px 0px 15px;
+    border: none;
+    outline: none;
+}
+
+.topo .cabecalho .pesquisa button{
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.topo .cabecalho .navegacao a{
+    text-decoration: none;
+    color: var(--cor-preta);
+    margin: 0 10px;
+}
+
+.topo .cabecalho .menu-lat button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 40px;
+}
+
+.topo .cabecalho img{
+    width: 150px;
+}
+
+.topo .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+
+
+.corpo .ofertas-dia,
+.corpo .outras-ofertas,
+.corpo .promocoes{
+    padding: 10px;
+}
+
+.corpo .ofertas-dia .flex,
+.corpo .outras-ofertas .flex,
+.corpo .promocoes .flex{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.corpo .ofertas-dia .itens,
+.corpo .outras-ofertas .itens{
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid var(--cor-preta);
+    }
+
+    .corpo .ofertas-dia .itens img,
+    .corpo .outras-ofertas .itens img{
+        padding: 10px;
+    }
+
+    .corpo .ofertas-dia .itens .titulo,
+    .corpo .outras-ofertas .itens .titulo{
+        width: fit-content;
+    padding: 3px;
+    color: var(--cor-branca);
+    background-color: var(--cor-ofertas);
+    border-radius: 10px;
+}
+
+.corpo .ofertas-dia .itens .frete,
+.corpo .outras-ofertas .itens .frete{
+    color: var(--cor-valor);
+    font-weight: 700;
+}
+
+.corpo .ofertas-dia .itens .valorParcelado,
+.corpo .outras-ofertas .itens .valorParcelado{
+    color: var(--cor-valor-parc);
+}
+
+.corpo .ofertas-dia .itens .descricao,
+.corpo .outras-ofertas .itens .descricao{
+    opacity: 0.5;
+}
+
+.corpo .ofertas-dia .itens .valorTotal,
+.corpo .outras-ofertas .itens .valorTotal{
+    font-size: 1.5em;
+    color: var(--cor-textos);
+}
+
+.corpo .promocoes .itens{
+    text-align: center;
+    padding: 20px;
+}
+
+.corpo .promocoes h3,
+.corpo .outras-ofertas a{
+    text-align: center;
+}
+
+.corpo .outras-ofertas a{
+    display: block;
+}
+
+.rodape{
+    background-color: var(--cor-principal);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    background-image: url(../img/rodape.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.rodape .primaryDiv,
+.rodape .secundDiv{
+    padding: 20px;
+}
+
+.rodape .secundDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mg{
+    margin-bottom: 20px;
+}
